@@ -20,7 +20,12 @@ flutter:
 dependencies:
   flutter:
     sdk: flutter
-  webview_flutter_android: ^2.2.0
+  webview_flutter_android:
+    git:
+      url: https://github.com/TimYusR/plugins
+      ref: allow-slash-in-channel-names
+      path: packages/webview_flutter/webview_flutter_android
+
   webview_flutter_platform_interface:
     git:
       url: https://github.com/TimYusR/plugins
