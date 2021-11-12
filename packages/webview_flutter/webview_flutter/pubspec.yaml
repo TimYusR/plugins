@@ -27,7 +27,11 @@ dependencies:
       ref: allow-slash-in-channel-names
       path: packages/webview_flutter/webview_flutter_platform_interface
 
-  webview_flutter_wkwebview: ^2.2.0
+  webview_flutter_wkwebview:
+    git:
+      url: https://github.com/TimYusR/plugins
+      ref: allow-slash-in-channel-names
+      path: packages/webview_flutter/webview_flutter_wkwebview
 
 dev_dependencies:
   flutter_driver:

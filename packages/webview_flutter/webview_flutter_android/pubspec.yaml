@@ -2,6 +2,7 @@ name: webview_flutter_android
 description: A Flutter plugin that provides a WebView widget on Android.
 repository: https://github.com/flutter/plugins/tree/master/packages/webview_flutter/webview_flutter_android
 issue_tracker: https://github.com/flutter/flutter/issues?q=is%3Aissue+is%3Aopen+label%3A%22p%3A+webview%22
+publish_to: none
 version: 2.2.1
 
 environment:
@@ -19,7 +20,11 @@ flutter:
 dependencies:
   flutter:
     sdk: flutter
-  webview_flutter_platform_interface: ^1.2.0
+  webview_flutter_platform_interface:
+    git:
+      url: https://github.com/TimYusR/plugins
+      ref: allow-slash-in-channel-names
+      path: packages/webview_flutter/webview_flutter_platform_interface
 
 dev_dependencies:
   build_runner: ^2.1.4
